@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente Arial */
+    background: linear-gradient(to bottom, #ffc5c5, #c7b8ea); /* Fondo rosa con violeta */
+    display: flex; /* Flexbox para centrar todo */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura del 100% de la pantalla */
+    margin: 0; /* Margen 0 */
+  }
+  
+  /* Estilos para el contenedor */
+  .container {
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Dirección de columna */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Padding */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  /* Estilos para el corazón */
+  .heart {
+    font-size: 24px; /* Tamaño del corazón */
+    color: #ff69b4; /* Color rosa */
+    cursor: pointer; /* Cursor en forma de mano */
+    margin-bottom: 20px; /* Margen inferior */
+    transition: transform 0.5s; /* Transición para el corazón */
+  }
+  
+  .heart:hover {
+    transform: scale(1.2); /* Escala 1.2 al pasar el mouse por encima */
+  }
+  
+  /* Estilos para el mensaje normal */
+  .message-normal {
+    font-size: 18px; /* Tamaño del mensaje normal */
+    color: #333; /* Color negro */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  /* Estilos para el mensaje oculto */
+  .message-hidden {
+    position: relative; /* Posición relativa */
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.5s; /* Transición para el mensaje oculto */
+  }
+  
+  .message-hidden.show {
+    display: block; /* Muestra el mensaje oculto */
+    opacity: 1; /* Opacidad 1 al final */
+  }
+  
+  /* Estilos para el texto del mensaje oculto */
+  .message-hidden::before {
+    font-size: 18px; /* Tamaño del texto */
+    color: #337ab7; /* Color azul */
+    position: absolute; /* Posición absoluta */
+    top: 10px; /* Posición superior */
+    left: 10px; /* Posición izquierda */
+  }
+  
+  /* Animación para mostrar el mensaje oculto */
+  @keyframes show {
+    0% {
+      opacity: 0; /* Opacidad 0 al principio */
+      transform: scale(0.5); /* Escala 0.5 al principio */
+    }
+    100% {
+      opacity: 1; /* Opacidad 1 al final */
+      transform: scale(1); /* Escala 1 al final */
+    }
+  }
+  p {/* Estilos para el mensaje normal */
+    .message-normal {
+      font-size: 18px; /* Tamaño del mensaje normal */
+      color: #333; /* Color negro */
+      margin-bottom: 20px; /* Margen inferior */
+      font-family: 'Pacifico', cursive; /* Fuente Pacifico */
+    }}
